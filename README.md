@@ -33,13 +33,14 @@ Consumes | Produces
     "ip": "127.0.0.1",
     "rid": "your_sub_source_identifier",
     "xid": "your_lead_id",
-    "alliance": [
-      {
+    "alliance":
+    {
         "allianceId": "gmg_12345",
         "allianceUid": "gmg_u_12345",
         "alliancePartnerId": "gmg_partner_12345"
-      }
-    ]
+    },
+    "tcpa_token": "tcpa_token_value",
+    "tcpa_text": "tcpa_text_value"
 }
 ```
 
