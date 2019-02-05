@@ -31,10 +31,10 @@ Consumes | Produces
     "tobacco": "Y",
     "gender": "M",
     "ip": "127.0.0.1",
-    "rid": "your_sub_source_identifier", // Limit 45 characters. Overwrites "src". Available as leads.rid & leads.visit_source.
-    "gclid": "the_google_click_identifier", // Limit 100 characters. Available as leads.gclid.
-    "campaign": "your_ppc_campaign_identifier", // Limit 100 characters. Available as leads.ppc_campaign.
-    "src": "your_source_identifier", // Limit 45 characters. Available as leads.visit_source.
+    "rid": "your_sub_source_identifier",
+    "gclid": "the_google_click_identifier",
+    "campaign": "your_ppc_campaign_identifier",
+    "src": "your_source_identifier",
     "xid": "your_lead_id",
     "alliance": {
         "allianceId": "gmg_12345",
@@ -45,6 +45,14 @@ Consumes | Produces
     "tcpa_text": "tcpa_text_value"
 }
 ```
+
+#### Parameter Notes (internal use)
+Parameter | Notes | DB Column
+----------|-------|----------
+`rid` | Limit 45 characters. Overwrites "src". | leads.rid & leads.visit_source
+`gclid` | Limit 100 characters. | leads.gclid
+`campaign` | Limit 100 characters. | leads.ppc_campaign
+`src` | Limit 45 characters. | leads.visit_source
 
 ### Responses
 
