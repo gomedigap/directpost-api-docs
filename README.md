@@ -31,7 +31,10 @@ Consumes | Produces
     "tobacco": "Y",
     "gender": "M",
     "ip": "127.0.0.1",
-    "rid": "your_sub_source_identifier",
+    "rid": "your_sub_source_identifier", // Limit 45 characters. Overwrites "src". Available as leads.rid & leads.visit_source.
+    "gclid": "the_google_click_identifier", // Limit 100 characters. Available as leads.gclid.
+    "campaign": "your_ppc_campaign_identifier", // Limit 100 characters. Available as leads.ppc_campaign.
+    "src": "your_source_identifier", // Limit 45 characters. Available as leads.visit_source.
     "xid": "your_lead_id",
     "alliance": {
         "allianceId": "gmg_12345",
@@ -70,4 +73,5 @@ Consumes | Produces
 Responsibility | Name | Email
 ---------------|------|------
 Lead Buying | Jacob Von Feldt | <jacob.vonfeldt@gomedigap.com>
+Marketing | Maddy Contois | <maddy.contois@gomedigap.com>
 API Development | Patrick Guevara | <patrick.guevara@gomedigap.com>
